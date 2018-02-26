@@ -1,0 +1,4 @@
+node_modules/**/*
+.expo/**/*
+.tern-port
+_universe
