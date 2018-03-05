@@ -15,9 +15,7 @@ const styles = StyleSheet.create({
     paddingLeft: '2%',
     paddingVertical: '2%',
   },
-  calendar_days_list: {
-    paddingVertical: 10,
-  },
+  calendar_days_list: { paddingVertical: 10 },
   contentContainerStyle: {
     justifyContent: 'space-around',
     width: '125%',

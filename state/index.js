@@ -64,8 +64,7 @@ const TODAY = new Date();
 
 export const offerings_store = AragatsOfferings.create({
   offerings_date: TODAY,
-  aragats_offerings: [],
-  // aragats_offerings: [dummy_data.card_day_a, dummy_data.card_day_b, dummy_data.card_day_c],
+  aragats_offerings: [dummy_data.card_day_a, dummy_data.card_day_b, dummy_data.card_day_c],
 });
 
 onSnapshot(nav_store, snapshot => {
