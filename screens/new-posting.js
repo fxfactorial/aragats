@@ -1,13 +1,18 @@
-import React from 'react';
-import { Platform, View, Text } from 'react-native';
+import React, { PureComponent } from 'react';
+import { View, Text, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { TabNavigator, TabBarBottom } from 'react-navigation';
+import SubmitBar from '../components/submit-bar';
+import NewPostForm from '../components/new_post_form';
 
-export default class NewPosting extends React.Component {
+export default class NewPosting extends PureComponent {
   render() {
     return (
-      <View>
-        <Text>NewPosting</Text>
-      </View>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View>
+          <NewPostForm />
+          <SubmitBar />
+        </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
